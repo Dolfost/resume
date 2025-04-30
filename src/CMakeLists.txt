@@ -44,7 +44,7 @@ else()
 	set(SILENT_OPTIONS "-silent")
 endif()
 
-add_custom_target(report_pdf
+add_custom_target(report_pdf ALL
 	COMMAND ${LATEXMK_EXECUTABLE} ${LRT_DOCUMENT}
 		-r "${CMAKE_CURRENT_BINARY_DIR}/latexmkrc"
 		"${SILENT_OPTIONS}" "${LATEXMK_OPTIONS}"

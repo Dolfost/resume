@@ -4,24 +4,62 @@
 \input{preamble}
 \addbibresource{bibliography.bib}
 
+\newcommand{\crule}{\par\noindent\rule{\textwidth}{0.5pt}}
+
 \begin{document}
+\thispagestyle{empty}
 
-\input{defines}
+\begin{center}
+	\LARGE \textbf{Vladyslav Rehan}\\[4mm] \normalsize
+	\texttt{\phonenumber{+380636637248} \(\diamond\)\
+	\href{mailto:rehanvladyslav@gmail.com}{rehanvladyslav@gmail.com} \(\diamond\)
+	\url{github.com/Dolfost}}
+\end{center}
+\crule
+\section{Education}
+\textbf{Applied mathematics and software} | Bachelor's degree, 3rd year | \href{http://nau.edu.ua/en/}{Kyiv Aviation Institute}\\
+Entered university for a paid education plan, got transfered to state-funded
+after first year. Average grade from last semester is 87.37 out of 100.
+Less-or-more important course works included:
+\begin{itemize}
+	\item Statistical approach to detecting rare fragments on a digital image
+	\item Automated software for multidimensional data analysis
+\end{itemize}
 
-\input{title}
+\crule
+\section{About myself}
+Can fluently read books and documentation in english. Worked with Github
+Actions, have basic FreeCAD usage experience. Primarily write on C++. A lot of
+knowlede about programming and associated tools was gathered from
+\href{https://github.com/Dolfost/Dolfost/blob/main/README.md#literature--sources}{books}.
+Use LaTeX (lualatex) as daily driver for university reports.
 
-\subfile{content/chapter1/chapter1.tex}
-\subfile{content/chapter2/chapter2.tex}
-\subfile{content/chapter3/chapter3.tex}
-\subfile{content/chapter4/chapter4.tex}
-\subfile{content/chapter5/chapter5.tex}
+\crule
+\section{Work experience}
+I have no work experience.
 
-\subfile{content/appendencies/appendencies.tex}
+\section{Skills}
+\begin{itemize}
+	\item C/C++, CMake, Bash, Lua, LaTeX
+	\item Git, Doxygen
+\end{itemize}
+C++ libraries: STL, Qt6, ExprTk, QCustomPlot, libpng, tomlplusplus
 
-\listoffigures
-% \listoflistings
-% \listoftables
-% \printindex
-\printbibliography
+\section{Tools}
+Maily use \href{https://github.com//Dolfost/dotfiles}{configured} tmux, nvim,
+lldb, *nix command line tools combo. Have some year-old week-long experience in
+QtCreator that was gained before moving to full CMake-only Qt workflow. I have
+understating of CTest unit testing and CPack packaging semantics. Regularry use
+remote shell acess technologies like ssh and scp(or better -- rsync). Own a
+local headless linux machine that is avaliable from WAN.
+
+\section{One-man projects}
+\begin{itemize}
+	\item \href{https://github.com/Dolfost/matstat}{Multidimensional data analysis software} (C++, Qt, QCustomPlot, ExprTk, \(\approx 12\)k lines)
+	\item \href{https://github.com/Dolfost/tartan}{Chess game backend} (C++, CI/CD, Doxygen, CTest, CPack)
+	\item \href{https://github.com/Dolfost/ssmk/tree/develop}{.png spritesheet factory} (C++, libpng, tomlplusplus)
+	\item \href{https://github.com/Dolfost/calgo}{Numerical methods library} (C++, CI/CD, Qt, Doxygen) 
+	\item \href{https://github.com/Dolfost/snake-cpp}{nCurses snake game} (C/C++, newcurses textual user interface)
+\end{itemize}
 
 \end{document}
