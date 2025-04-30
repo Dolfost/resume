@@ -5,10 +5,7 @@ show () {
 }
 
 # installing dependencies
-show "Installing texlive"
-sudo apt install texlive
-show "Installing latexmk"
-sudo tlmgr install latexmk
+sudo apt install texlive latexmk
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 export REPO="$SCRIPT_DIR/.."
