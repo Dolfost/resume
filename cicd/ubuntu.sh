@@ -5,7 +5,7 @@ show () {
 }
 
 # installing dependencies
-sudo apt install texlive-full
+sudo apt install texlive-full ttf-mscorefonts-installer
 
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 export REPO="$SCRIPT_DIR/.."
