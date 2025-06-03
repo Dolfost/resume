@@ -6,7 +6,7 @@ find_package(LATEX REQUIRED)
 find_package(LatexMk REQUIRED)
 find_package(TexLogFilter)
 
-set(LRT_DOCUMENT "${CMAKE_CURRENT_SOURCE_DIR}/resume")
+set(LRT_DOCUMENT "${CMAKE_CURRENT_SOURCE_DIR}/CV_Vladyslav_Rehan")
 
 configure_file("${CMAKE_CURRENT_SOURCE_DIR}/latexmkrc.in"
 	"${CMAKE_CURRENT_BINARY_DIR}/latexmkrc"
